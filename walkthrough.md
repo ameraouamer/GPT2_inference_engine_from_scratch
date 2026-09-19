@@ -835,41 +835,7 @@ output = gamma × normalized + beta
 
 ---
 
-# 20. What Does `axis=-1` Mean?
 
-`axis=-1` means:
-
-> Work along the last dimension.
-
-Suppose:
-
-```text
-x.shape = (batch, sequence, features)
-```
-
-For GPT-2:
-
-```text
-(batch, T, 768)
-```
-
-The last dimension is:
-
-```text
-768 features
-```
-
-So LayerNorm computes statistics across those 768 features **for each token independently**.
-
-For example:
-
-```text
-Token 1 → 768 features → normalize these
-Token 2 → 768 features → normalize these
-Token 3 → 768 features → normalize these
-```
-
-It does not mix different tokens together.
 
 ---
 
