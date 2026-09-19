@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Environment variables
+.env
+
+# Model/checkpoint files
+*.ckpt
+*.ckpt.*
+checkpoint/
+checkpoints/
+
+# Generated files
+*.log
